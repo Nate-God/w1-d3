@@ -1,3 +1,14 @@
+*{
+    margin:0;
+}
+
+.nav-links{
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
 body{
     background-color: rgb(46, 46, 46);
     color: azure;
@@ -20,7 +31,26 @@ body{
     ". posts posts .";
 }
 
-.nav { grid-area: nav; }
+.nav { 
+    grid-area: nav;
+    background-color: rgb(15, 94, 94);
+    position: sticky;
+    top:0;
+}
+.nav-links > a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-links > a:hover {
+    color: rgb(65, 65, 65);
+    text-decoration: none;
+    font-size:large;
+}
+
 .prof-pic { grid-area: prof-pic; }
 .prof-info { grid-area: prof-info; }
-.posts { grid-area: posts; }
+.posts { 
+    grid-area: posts; 
+    height: 100vh;
+}
