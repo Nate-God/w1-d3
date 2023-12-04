@@ -1,0 +1,181 @@
+.container {  
+    display: grid;
+    grid-template-columns: 20vw 1.5fr 20vw;
+    grid-template-rows: 50vh 1.7fr;
+    gap: 0% 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "Bg-img Bg-img Bg-img"
+    ". Main-content .";
+}
+
+body{
+    overflow-x: hidden;
+    background-color: rgb(220, 220, 220);
+    margin-top: 0px;
+}
+h1{
+    display: inline-block;
+}
+
+.Bg-img{
+    text-align: center;
+}
+
+.Bg-img img{
+    width:115vw;
+    position: relative;
+    right: 12vw;
+    height: 100%;
+    min-height: 90px;
+}
+
+/* .Nav { 
+    display: flex;
+    justify-content: space-around;
+} */
+#griot{
+    position: absolute;
+    top: 5px;
+    left: 4px;
+}
+#home{
+    position: absolute;
+    top: 20.6px;
+    left: 15rem;
+}
+#feature{
+    position: absolute;
+    top: 20.6px;
+    left: 20rem;
+}
+#actor{
+    position: absolute;
+    top: 20.6px;
+    left: 26rem;
+}
+#mission{
+    position: absolute;
+    top: 20.6px;
+    left: 33rem;
+}
+#contact{
+    position: absolute;
+    top: 20.6px;
+    left: 39rem;
+}
+#shows{
+    position: absolute;
+    top: 22vh;
+    left: 20vw;
+    font-size: 5.5rem;
+}
+
+.Nav a{
+    color: white;
+    text-decoration: none;
+}
+.Nav a:hover{
+    color: pink;
+    text-decoration: none;
+}
+
+.Nav h1{
+    margin: 0px;
+    position: relative;
+    bottom: 15.4px;
+    color: white;
+}
+.Bg-img { grid-area: Bg-img; }
+
+.Main-content { 
+    grid-area: Main-content;
+}
+
+#date-spacer{
+    margin-top: 20px;
+    text-align: center;
+    border: 1px solid black;
+    background-color: rgb(190, 190, 190);
+}
+
+.card{
+    display: flex;
+    height: fit-content;
+    padding-bottom:10px;
+    border-bottom: 1px solid black;
+    margin: 20px;
+    position: relative;
+}
+.card-information > *{
+    margin: 2px;
+}
+.card img{
+    height: 6rem;
+    width: 8rem;
+    margin-right: 5px;
+}
+.card-btn{
+    position: absolute;
+    right: 0px;
+    top: 1.5rem;
+    justify-content: space-between;
+    background-color: rgb(255, 166, 57);
+    height: 2rem;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.card-btn:hover{
+    background-color: rgb(230, 127, 0);
+    
+}
+
+footer{
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    top: 20px;
+    right: 9px;
+    width: 100.2vw;
+}
+.footer { 
+    grid-area: footer; 
+    display:flex;
+    justify-content: space-around;
+    color: white;
+    flex-wrap: wrap;
+
+}
+
+.footer h2{
+    font-weight: 500;
+    margin: 0px;
+    margin-top: 3px;
+}
+.social{
+    display: flex;
+    flex-direction: column;
+}
+footer a{
+    margin-bottom: 1rem;
+    color:white;
+    text-decoration:none;
+    margin-bottom: 0px;
+    margin-top: 16px;
+}
+footer a:hover{
+    color: pink;
+}
+
+footer img{
+    position: relative;
+    top:3rem;
+    width:15%;
+    height: 7rem;
+}
+
+
+.footer-info img{
+    position:static;
+    width:1rem;
+    height: 1rem;
+}
